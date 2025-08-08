@@ -1,0 +1,101 @@
+/* -------------------------------------
+   🌐 BASE STYLES (80/20) FOR ANY PROJECT
+   Copy this into base.css or top of main.css
+------------------------------------- */
+
+/* 1. Box-sizing reset — essential layout fix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* Ensures padding/border stay inside the element's width/height */
+}
+
+/* 2. Remove default margin and padding from common elements */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  /* Gives you full control over spacing */
+}
+
+/* 3. Body base styles */
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Sets clean defaults for text, spacing, background */
+}
+
+/* 4. Make images, videos, etc. responsive by default */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* Prevents overflow, maintains aspect ratio */
+}
+
+/* 5. Remove default styles from lists */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* You can style your own bullets if needed */
+}
+
+/* 6. Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Prevents ugly blue underlines unless you want them */
+}
+
+/* 7. Reset buttons and form inputs */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  /* Makes them look neutral so you can style as you like */
+}
+
+/* 8. Cursor for buttons */
+button {
+  cursor: pointer;
+  /* Makes buttons behave like clickable elements */
+}
+
+/* 9. Prevent iOS font size scaling on rotation */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 10. Set base font size in rem if preferred */
+html {
+  font-size: 62.5%; /* 16px */
+  /* You can scale this down at smaller breakpoints for responsive typography */
+}

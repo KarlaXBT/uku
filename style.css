@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+body {
+  font-family: "Sora", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+}
+
+.gallery__heading {
+  font-size: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.flex-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.gallery__img-box {
+  width: 60rem;
+  height: 35rem;
+  position: relative;
+}
+
+.gallery__img-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; /* position overlay exactly over image */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* center text horizontally + vertically */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* font-size: 24px; */
+  background-color: rgba(0, 0, 0, 0.2); /* semi-transparent dark background */
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.gallery__img-box a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+.gallery__img-box a:hover .overlay {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* Make overlay hidden initially */
+/* .overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+} */
